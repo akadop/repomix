@@ -1,3 +1,4 @@
+import { visualizer } from 'rollup-plugin-visualizer';
 import { defineConfig } from 'vitepress';
 import { configEsSearch } from './configEs';
 import { configJaSearch } from './configJa';
@@ -92,4 +93,12 @@ export const configShard = defineConfig({
       gtag('config', '${googleAnalyticsTag}');`,
     ],
   ],
+
+  vite: {
+    build: {
+      rollupOptions: {
+        plugins: [visualizer()],
+      },
+    },
+  },
 });

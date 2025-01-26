@@ -6,12 +6,13 @@
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview"
   },
-  "devDependencies": {
-    "vitepress": "^1.6.0"
-  },
   "dependencies": {
-    "@types/gtag.js": "^0.0.20",
     "lucide-vue-next": "^0.473.0",
     "vue3-ace-editor": "^2.2.4"
+  },
+  "devDependencies": {
+    "@types/gtag.js": "^0.0.20",
+    "rollup-plugin-visualizer": "^5.14.0",
+    "vitepress": "^1.6.0"
   }
 }
